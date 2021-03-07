@@ -1,0 +1,25 @@
+{
+  "extends": [
+    "wesbos"
+  ],
+  "settings": {
+    "import/resolver": {
+      "node": {
+        "extensions": [".js", ".jsx", ".ts", ".tsx"]
+      }
+    }
+  },
+  "rules": {
+    "react/jsx-props-no-spreading": 0,
+    "react/jsx-filename-extension": [1, { "extensions": [".tsx"] }],
+    "react/prop-types": [
+      1,
+      {
+        "ignore": [
+          "props.children"
+        ],
+        "skipUndeclared": true
+      }
+    ]
+  }
+}
